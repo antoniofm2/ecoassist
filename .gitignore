@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+dados/trashnet/
+dados/trashnet_raw/
+resultados/*.joblib
+resultados.zip
+artigo/*.aux
+artigo/*.log
+artigo/*.out
+.env
+*.log

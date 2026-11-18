@@ -1,0 +1,341 @@
+texto,intencao
+A cooperativa aceita esse objeto?,reciclavel
+Qual lixeira devo usar para esse objeto?,cor_lixeira
+Que tipo de material é esse objeto?,identificar_material
+"Isso pode ir para a reciclagem, essa garrafa?",reciclavel
+do que é feito esse item,identificar_material
+Como preparo esse resíduo para descarte?,cuidados
+Por que reciclar esse lixo é importante?,curiosidade
+Como descarto essa caixa?,como_descartar
+A cooperativa aceita essa embalagem?,reciclavel
+Me conte uma curiosidade sobre essa embalagem,curiosidade
+O que é isso?,identificar_material
+Qual a classificação de essa lata?,identificar_material
+Qual a cor da lixeira para esse resíduo?,cor_lixeira
+Qual a classificação de essa embalagem?,identificar_material
+Qual lixeira devo usar para essa embalagem?,cor_lixeira
+essa caixa precisa estar limpo para descartar?,cuidados
+Qual o impacto ambiental de esse item?,curiosidade
+Qual é o material de esse objeto?,identificar_material
+Existe risco ao descartar essa lata?,cuidados
+como descarto essa lata,como_descartar
+Você sabe identificar essa lata?,identificar_material
+Existe risco ao descartar esse resíduo?,cuidados
+Qual a vantagem de reciclar essa embalagem?,curiosidade
+Como descarto este material?,como_descartar
+Posso reciclar esse objeto?,reciclavel
+Tem algum cuidado com essa embalagem?,cuidados
+O que é essa garrafa?,identificar_material
+Onde jogo isso?,como_descartar
+o que faço com essa garrafa,como_descartar
+Preciso tomar cuidado com essa lata?,cuidados
+Como preparo esse lixo para descarte?,cuidados
+o que acontece quando se recicla essa caixa,curiosidade
+Qual o impacto ambiental de essa caixa?,curiosidade
+Como descarto esse resíduo?,como_descartar
+isso é reciclável?,reciclavel
+esse objeto precisa estar limpo para descartar?,cuidados
+A cooperativa aceita essa garrafa?,reciclavel
+Como preparo este material para descarte?,cuidados
+Como me livrar de essa caixa corretamente?,como_descartar
+Em qual lixeira coloco essa embalagem?,cor_lixeira
+Dá para reciclar essa garrafa?,reciclavel
+Preciso tomar cuidado com este material?,cuidados
+esse item precisa estar limpo para descartar?,cuidados
+essa lata precisa estar limpo para descartar?,cuidados
+Tem algum cuidado com essa lata?,cuidados
+"Isso pode ir para a reciclagem, essa embalagem?",reciclavel
+em qual lixeira coloco esse objeto,cor_lixeira
+Como me livrar de esse resíduo corretamente?,como_descartar
+por que reciclar essa caixa é importante,curiosidade
+"Vai na lixeira de qual cor, essa caixa?",cor_lixeira
+me conte uma curiosidade sobre esse objeto,curiosidade
+isso pode ser reciclado,reciclavel
+Em qual lixeira coloco essa caixa?,cor_lixeira
+me conte uma curiosidade sobre esse resíduo,curiosidade
+Preciso lavar este material antes?,cuidados
+como descarto esse lixo,como_descartar
+a cooperativa aceita isso,reciclavel
+Como devo descartar esse lixo?,como_descartar
+Dá para reciclar esse objeto?,reciclavel
+Me conte uma curiosidade sobre esse item,curiosidade
+Qual lixeira devo usar para esse resíduo?,cor_lixeira
+essa garrafa precisa estar limpo para descartar?,cuidados
+Existe risco ao descartar essa caixa?,cuidados
+Qual é a cor certa da lixeira de esse item?,cor_lixeira
+Qual o jeito certo de descartar essa embalagem?,como_descartar
+Qual a classificação de isso?,identificar_material
+Qual o impacto ambiental de essa garrafa?,curiosidade
+Qual o jeito certo de descartar esse objeto?,como_descartar
+Me conte uma curiosidade sobre essa caixa,curiosidade
+Me conte uma curiosidade sobre esse lixo,curiosidade
+qual lixeira devo usar para essa lata,cor_lixeira
+Preciso lavar essa embalagem antes?,cuidados
+"Vai na lixeira de qual cor, esse lixo?",cor_lixeira
+isso precisa estar limpo para descartar?,cuidados
+Dá para reciclar esse resíduo?,reciclavel
+A cooperativa aceita esse item?,reciclavel
+Preciso tomar cuidado com esse resíduo?,cuidados
+"vai na lixeira de qual cor, isso",cor_lixeira
+Em qual lixeira coloco isso?,cor_lixeira
+Que tipo de material é esse resíduo?,identificar_material
+qual o impacto ambiental de essa lata,curiosidade
+Onde coloco este material?,como_descartar
+Qual o jeito certo de descartar essa caixa?,como_descartar
+O que faço com isso?,como_descartar
+Me conte uma curiosidade sobre essa lata,curiosidade
+O que é essa caixa?,identificar_material
+Onde coloco essa caixa?,como_descartar
+Qual a classificação de esse item?,identificar_material
+Onde coloco isso?,como_descartar
+esse item pode ser reciclado?,reciclavel
+Que tipo de material é essa garrafa?,identificar_material
+Qual o jeito certo de descartar isso?,como_descartar
+posso reciclar essa lata,reciclavel
+Qual é o material de esse item?,identificar_material
+O que faço com este material?,como_descartar
+Qual é a cor certa da lixeira de essa caixa?,cor_lixeira
+qual a classificação de essa caixa,identificar_material
+Qual o impacto ambiental de esse objeto?,curiosidade
+Você sabe identificar esse lixo?,identificar_material
+Preciso lavar essa caixa antes?,cuidados
+Onde jogo esse lixo?,como_descartar
+Qual a classificação de esse lixo?,identificar_material
+Onde jogo esse item?,como_descartar
+Por que reciclar essa lata é importante?,curiosidade
+O que é esse lixo?,identificar_material
+Qual a vantagem de reciclar essa garrafa?,curiosidade
+onde jogo essa lata,como_descartar
+"Isso pode ir para a reciclagem, esse lixo?",reciclavel
+O que é esse objeto?,identificar_material
+qual a classificação de essa garrafa,identificar_material
+Você sabe identificar esse item?,identificar_material
+Qual a vantagem de reciclar esse objeto?,curiosidade
+Qual é o material de esse resíduo?,identificar_material
+onde coloco esse item,como_descartar
+esse resíduo pode ser reciclado?,reciclavel
+Tem algum cuidado com este material?,cuidados
+Em qual lixeira coloco esse resíduo?,cor_lixeira
+"Vai na lixeira de qual cor, esse item?",cor_lixeira
+este material é reciclável?,reciclavel
+essa garrafa pode ser reciclado,reciclavel
+Qual é a cor certa da lixeira de essa garrafa?,cor_lixeira
+Posso reciclar essa caixa?,reciclavel
+Do que é feito essa garrafa?,identificar_material
+"Isso pode ir para a reciclagem, esse objeto?",reciclavel
+Qual a vantagem de reciclar esse lixo?,curiosidade
+O que acontece quando se recicla este material?,curiosidade
+Me conte uma curiosidade sobre este material,curiosidade
+Qual a vantagem de reciclar este material?,curiosidade
+Em qual lixeira coloco essa garrafa?,cor_lixeira
+essa lata pode ser reciclado?,reciclavel
+Do que é feito este material?,identificar_material
+Onde jogo essa embalagem?,como_descartar
+"Vai na lixeira de qual cor, esse resíduo?",cor_lixeira
+como me livrar de essa embalagem corretamente,como_descartar
+Você sabe identificar esse resíduo?,identificar_material
+Qual é a cor certa da lixeira de essa lata?,cor_lixeira
+A cooperativa aceita este material?,reciclavel
+do que é feito essa caixa,identificar_material
+qual a classificação de esse objeto,identificar_material
+como me livrar de esse item corretamente,como_descartar
+Existe risco ao descartar esse lixo?,cuidados
+Dá para reciclar essa embalagem?,reciclavel
+Você sabe identificar este material?,identificar_material
+Qual a cor da lixeira para esse item?,cor_lixeira
+Do que é feito essa embalagem?,identificar_material
+preciso tomar cuidado com essa caixa,cuidados
+"Isso pode ir para a reciclagem, esse item?",reciclavel
+Dá para reciclar esse item?,reciclavel
+qual a classificação de este material,identificar_material
+como devo descartar este material,como_descartar
+Qual é o material de essa lata?,identificar_material
+Qual a vantagem de reciclar esse resíduo?,curiosidade
+Posso reciclar este material?,reciclavel
+Qual é a cor certa da lixeira de esse lixo?,cor_lixeira
+Qual a cor da lixeira para esse lixo?,cor_lixeira
+dá para reciclar este material,reciclavel
+Qual lixeira devo usar para essa garrafa?,cor_lixeira
+Qual a cor da lixeira para essa garrafa?,cor_lixeira
+Onde jogo este material?,como_descartar
+Qual lixeira devo usar para isso?,cor_lixeira
+Dá para reciclar esse lixo?,reciclavel
+essa embalagem precisa estar limpo para descartar?,cuidados
+Me conte uma curiosidade sobre isso,curiosidade
+preciso lavar esse lixo antes,cuidados
+Tem algum cuidado com esse lixo?,cuidados
+preciso tomar cuidado com isso,cuidados
+O que é esse resíduo?,identificar_material
+O que acontece quando se recicla essa embalagem?,curiosidade
+Como me livrar de isso corretamente?,como_descartar
+esse lixo pode ser reciclado?,reciclavel
+"Vai na lixeira de qual cor, essa garrafa?",cor_lixeira
+Qual a cor da lixeira para essa embalagem?,cor_lixeira
+esse objeto pode ser reciclado,reciclavel
+Por que reciclar esse objeto é importante?,curiosidade
+O que acontece quando se recicla essa garrafa?,curiosidade
+Que tipo de material é esse lixo?,identificar_material
+Qual é o material de esse lixo?,identificar_material
+preciso lavar isso antes,cuidados
+Qual lixeira devo usar para esse item?,cor_lixeira
+O que é esse item?,identificar_material
+Como me livrar de este material corretamente?,como_descartar
+Você sabe identificar essa caixa?,identificar_material
+Em qual lixeira coloco este material?,cor_lixeira
+Existe risco ao descartar este material?,cuidados
+Qual é a cor certa da lixeira de esse resíduo?,cor_lixeira
+Tem algum cuidado com esse item?,cuidados
+Onde jogo essa caixa?,como_descartar
+Preciso tomar cuidado com esse item?,cuidados
+Como preparo esse item para descarte?,cuidados
+Como devo descartar isso?,como_descartar
+você sabe identificar essa garrafa,identificar_material
+Onde coloco esse resíduo?,como_descartar
+essa embalagem é reciclável,reciclavel
+Qual o impacto ambiental de esse resíduo?,curiosidade
+Posso reciclar essa garrafa?,reciclavel
+Onde jogo esse resíduo?,como_descartar
+Você sabe identificar esse objeto?,identificar_material
+Qual o jeito certo de descartar este material?,como_descartar
+Qual lixeira devo usar para este material?,cor_lixeira
+Tem algum cuidado com isso?,cuidados
+Como preparo essa garrafa para descarte?,cuidados
+Qual é a cor certa da lixeira de essa embalagem?,cor_lixeira
+Qual a cor da lixeira para essa caixa?,cor_lixeira
+Qual é a cor certa da lixeira de esse objeto?,cor_lixeira
+A cooperativa aceita essa caixa?,reciclavel
+O que faço com esse resíduo?,como_descartar
+Qual o impacto ambiental de essa embalagem?,curiosidade
+Posso reciclar esse lixo?,reciclavel
+Do que é feito esse objeto?,identificar_material
+Qual a vantagem de reciclar essa caixa?,curiosidade
+o que é este material,identificar_material
+Qual o jeito certo de descartar esse resíduo?,como_descartar
+O que acontece quando se recicla esse resíduo?,curiosidade
+Que tipo de material é essa caixa?,identificar_material
+esse objeto é reciclável,reciclavel
+Preciso lavar essa lata antes?,cuidados
+O que acontece quando se recicla esse objeto?,curiosidade
+esse lixo precisa estar limpo para descartar?,cuidados
+Você sabe identificar isso?,identificar_material
+Como devo descartar essa garrafa?,como_descartar
+existe risco ao descartar esse item,cuidados
+O que faço com esse objeto?,como_descartar
+Por que reciclar essa garrafa é importante?,curiosidade
+O que faço com esse item?,como_descartar
+Qual a vantagem de reciclar essa lata?,curiosidade
+Onde coloco essa garrafa?,como_descartar
+como descarto esse objeto,como_descartar
+O que acontece quando se recicla esse item?,curiosidade
+Qual a classificação de esse resíduo?,identificar_material
+Como descarto esse item?,como_descartar
+"Isso pode ir para a reciclagem, este material?",reciclavel
+Como me livrar de esse objeto corretamente?,como_descartar
+"Vai na lixeira de qual cor, este material?",cor_lixeira
+O que faço com essa caixa?,como_descartar
+qual a cor da lixeira para esse objeto,cor_lixeira
+Qual a vantagem de reciclar isso?,curiosidade
+Onde jogo essa garrafa?,como_descartar
+Existe risco ao descartar essa garrafa?,cuidados
+Preciso lavar esse item antes?,cuidados
+Qual é o material de essa garrafa?,identificar_material
+Que tipo de material é este material?,identificar_material
+Qual o impacto ambiental de este material?,curiosidade
+Em qual lixeira coloco esse item?,cor_lixeira
+Existe risco ao descartar esse objeto?,cuidados
+Por que reciclar esse resíduo é importante?,curiosidade
+O que acontece quando se recicla essa lata?,curiosidade
+qual é o material de isso,identificar_material
+por que reciclar essa embalagem é importante,curiosidade
+esse resíduo é reciclável?,reciclavel
+Qual a cor da lixeira para isso?,cor_lixeira
+Qual o jeito certo de descartar essa lata?,como_descartar
+"Isso pode ir para a reciclagem, essa caixa?",reciclavel
+"vai na lixeira de qual cor, essa lata",cor_lixeira
+essa caixa pode ser reciclado?,reciclavel
+Como preparo esse objeto para descarte?,cuidados
+em qual lixeira coloco essa lata,cor_lixeira
+Que tipo de material é isso?,identificar_material
+essa caixa é reciclável?,reciclavel
+Qual o impacto ambiental de esse lixo?,curiosidade
+essa embalagem pode ser reciclado?,reciclavel
+Do que é feito esse resíduo?,identificar_material
+você sabe identificar essa embalagem,identificar_material
+Tem algum cuidado com essa garrafa?,cuidados
+Como descarto isso?,como_descartar
+tem algum cuidado com esse resíduo,cuidados
+Qual a cor da lixeira para essa lata?,cor_lixeira
+o que faço com esse lixo,como_descartar
+Como descarto essa garrafa?,como_descartar
+Preciso tomar cuidado com essa garrafa?,cuidados
+Posso reciclar essa embalagem?,reciclavel
+Como me livrar de essa garrafa corretamente?,como_descartar
+Por que reciclar este material é importante?,curiosidade
+"Isso pode ir para a reciclagem, isso?",reciclavel
+Qual lixeira devo usar para essa caixa?,cor_lixeira
+existe risco ao descartar isso,cuidados
+preciso lavar esse objeto antes,cuidados
+posso reciclar esse item,reciclavel
+Qual o jeito certo de descartar esse lixo?,como_descartar
+Onde coloco essa embalagem?,como_descartar
+Me conte uma curiosidade sobre essa garrafa,curiosidade
+Preciso lavar essa garrafa antes?,cuidados
+"Isso pode ir para a reciclagem, esse resíduo?",reciclavel
+Onde coloco esse objeto?,como_descartar
+Como devo descartar esse item?,como_descartar
+posso reciclar esse resíduo,reciclavel
+Que tipo de material é essa lata?,identificar_material
+como preparo isso para descarte,cuidados
+Como devo descartar esse objeto?,como_descartar
+dá para reciclar isso,reciclavel
+que tipo de material é esse item,identificar_material
+Qual a cor da lixeira para este material?,cor_lixeira
+O que é essa lata?,identificar_material
+essa garrafa é reciclável?,reciclavel
+Qual é o material de este material?,identificar_material
+Onde coloco esse lixo?,como_descartar
+essa lata é reciclável?,reciclavel
+Como preparo essa caixa para descarte?,cuidados
+A cooperativa aceita essa lata?,reciclavel
+Existe risco ao descartar essa embalagem?,cuidados
+Qual é o material de essa caixa?,identificar_material
+Qual a vantagem de reciclar esse item?,curiosidade
+Que tipo de material é essa embalagem?,identificar_material
+esse resíduo precisa estar limpo para descartar?,cuidados
+Por que reciclar esse item é importante?,curiosidade
+posso reciclar isso,reciclavel
+Do que é feito esse lixo?,identificar_material
+Qual é o material de essa embalagem?,identificar_material
+Do que é feito essa lata?,identificar_material
+dá para reciclar essa caixa,reciclavel
+O que acontece quando se recicla esse lixo?,curiosidade
+esse item é reciclável?,reciclavel
+Como preparo essa embalagem para descarte?,cuidados
+em qual lixeira coloco esse lixo,cor_lixeira
+esse lixo é reciclável,reciclavel
+preciso tomar cuidado com essa embalagem,cuidados
+Qual é a cor certa da lixeira de isso?,cor_lixeira
+A cooperativa aceita esse resíduo?,reciclavel
+Preciso lavar esse resíduo antes?,cuidados
+Preciso tomar cuidado com esse objeto?,cuidados
+Tem algum cuidado com esse objeto?,cuidados
+"vai na lixeira de qual cor, essa embalagem",cor_lixeira
+por que reciclar isso é importante,curiosidade
+este material pode ser reciclado?,reciclavel
+Dá para reciclar essa lata?,reciclavel
+Qual lixeira devo usar para esse lixo?,cor_lixeira
+Do que é feito isso?,identificar_material
+"Isso pode ir para a reciclagem, essa lata?",reciclavel
+Onde coloco essa lata?,como_descartar
+Como devo descartar essa caixa?,como_descartar
+Qual é a cor certa da lixeira de este material?,cor_lixeira
+Tem algum cuidado com essa caixa?,cuidados
+o que acontece quando se recicla isso,curiosidade
+Como preparo essa lata para descarte?,cuidados
+Qual o impacto ambiental de isso?,curiosidade
+este material precisa estar limpo para descartar,cuidados
+Preciso tomar cuidado com esse lixo?,cuidados
+"Vai na lixeira de qual cor, esse objeto?",cor_lixeira
+a cooperativa aceita esse lixo,reciclavel
+Como me livrar de esse lixo corretamente?,como_descartar
+O que é essa embalagem?,identificar_material

@@ -1,0 +1,49 @@
+texto,intencao
+"to com uma garrafa aqui, vai pra onde?",como_descartar
+"o que eu faço com esse treco depois de usar",como_descartar
+"preciso me livrar disso mas não sei onde botar",como_descartar
+"qual o destino certo pra esse lixo?",como_descartar
+"jogo fora como isso aqui?",como_descartar
+"me ensina a descartar direito",como_descartar
+"não sei o que fazer com essa sobra",como_descartar
+"onde levo isso pra ser descartado",como_descartar
+"que material é esse da foto?",identificar_material
+"isso é plástico ou vidro?",identificar_material
+"você consegue me dizer o que é esse objeto",identificar_material
+"de que isso é feito, afinal?",identificar_material
+"reconhece o material dessa imagem?",identificar_material
+"seria papel ou papelão?",identificar_material
+"identifica pra mim o que está na foto",identificar_material
+"qual tipo de material aparece aí",identificar_material
+"a reciclagem aceita isso?",reciclavel
+"isso vira material reciclado?",reciclavel
+"será que dá pra reaproveitar na reciclagem",reciclavel
+"posso botar na coleta seletiva?",reciclavel
+"isso é reciclável mesmo?",reciclavel
+"as cooperativas pegam esse tipo de coisa?",reciclavel
+"tem como reciclar isso aí?",reciclavel
+"é material de reciclagem?",reciclavel
+"qual cor de lixeira eu uso?",cor_lixeira
+"vai no balde azul, verde ou amarelo?",cor_lixeira
+"em que cor de coletor jogo isso",cor_lixeira
+"qual a lixeira certa pra isso?",cor_lixeira
+"que cor é o recipiente pra esse resíduo?",cor_lixeira
+"é na lixeira vermelha?",cor_lixeira
+"me diz a cor do lixo seletivo pra esse item",cor_lixeira
+"lixeira de qual cor recebe isso",cor_lixeira
+"antes de jogar tenho que lavar?",cuidados
+"precisa amassar ou desmontar primeiro?",cuidados
+"isso machuca quem coleta?",cuidados
+"tem algum perigo em descartar isso?",cuidados
+"posso jogar sujo ou preciso limpar",cuidados
+"que cuidado devo ter com esse material?",cuidados
+"devo tirar a tampa antes?",cuidados
+"é perigoso mexer nisso?",cuidados
+"fala alguma curiosidade sobre reciclagem disso",curiosidade
+"por que vale a pena reciclar isso?",curiosidade
+"o que isso vira depois de reciclado?",curiosidade
+"qual o benefício pro meio ambiente?",curiosidade
+"me conta um fato interessante sobre esse material",curiosidade
+"quanto de energia se economiza reciclando?",curiosidade
+"qual a importância ambiental disso",curiosidade
+"tem alguma história legal sobre a reciclagem desse item?",curiosidade

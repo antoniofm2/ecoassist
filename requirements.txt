@@ -1,0 +1,13 @@
+numpy
+pandas
+scikit-learn
+scikit-image
+joblib
+pillow
+matplotlib
+torch
+torchvision
+sentence-transformers
+spacy
+streamlit
+pytest

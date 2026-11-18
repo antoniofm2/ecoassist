@@ -1,0 +1,40 @@
+{
+  "classes": {
+    "cardboard": {"nome": "papelão", "lixeira": "azul", "reciclavel": true,
+      "descarte": "Desmonte e dobre a caixa, mantenha seca e limpa, e entregue na coleta seletiva (lixeira azul).",
+      "cuidados": "Papelão engordurado ou molhado (ex.: caixa de pizza suja) não é reciclável e vai para o lixo comum.",
+      "curiosidade": "Reciclar uma tonelada de papelão poupa várias árvores e muita água."},
+    "glass": {"nome": "vidro", "lixeira": "verde", "reciclavel": true,
+      "descarte": "Enxágue e coloque na coleta seletiva (lixeira verde). Embrulhe cacos em jornal e identifique-os.",
+      "cuidados": "Cuidado com cacos cortantes. Espelhos, cerâmica e vidro temperado não são recicláveis junto com embalagens.",
+      "curiosidade": "O vidro pode ser reciclado infinitas vezes sem perder qualidade."},
+    "metal": {"nome": "metal", "lixeira": "amarela", "reciclavel": true,
+      "descarte": "Enxágue latas e embalagens e descarte na coleta seletiva (lixeira amarela). Amasse para ocupar menos espaço.",
+      "cuidados": "Latas de tinta, aerossóis e pilhas exigem descarte especial em pontos de coleta.",
+      "curiosidade": "Reciclar alumínio economiza grande parte da energia necessária para produzi-lo do zero."},
+    "paper": {"nome": "papel", "lixeira": "azul", "reciclavel": true,
+      "descarte": "Mantenha seco e limpo e descarte na coleta seletiva (lixeira azul).",
+      "cuidados": "Papel higiênico, guardanapo usado, papel engordurado e papel carbono não são recicláveis.",
+      "curiosidade": "Cada tonelada de papel reciclado evita o corte de várias árvores."},
+    "plastic": {"nome": "plástico", "lixeira": "vermelha", "reciclavel": true,
+      "descarte": "Esvazie, enxágue e descarte na coleta seletiva (lixeira vermelha). Verifique o símbolo de reciclagem.",
+      "cuidados": "Plásticos sujos de gordura e embalagens metalizadas (ex.: pacote de salgadinho) em geral não são aceitos.",
+      "curiosidade": "Garrafas PET podem virar fibras para tecidos e novas embalagens."},
+    "trash": {"nome": "rejeito", "lixeira": "cinza", "reciclavel": false,
+      "descarte": "Itens sem reciclagem viável vão para o lixo comum (lixeira cinza), bem embalados.",
+      "cuidados": "Pilhas, baterias, eletrônicos, lâmpadas e remédios vencidos NÃO vão no lixo comum: leve a pontos de coleta específicos.",
+      "curiosidade": "Reduzir e reutilizar vem antes de reciclar: o melhor resíduo é o que não é gerado."}
+  },
+  "trechos": [
+    {"id": "t1", "classe": "geral", "texto": "A coleta seletiva usa cores: azul para papel e papelão, vermelho para plástico, verde para vidro, amarelo para metal, cinza para rejeitos e marrom para orgânicos (Resolução CONAMA 275/2001)."},
+    {"id": "t2", "classe": "geral", "texto": "Lave e seque embalagens antes de descartá-las: resíduos com restos de comida contaminam o material reciclável."},
+    {"id": "t3", "classe": "geral", "texto": "Resíduos perigosos como pilhas, baterias, lâmpadas fluorescentes e eletrônicos devem ser levados a pontos de logística reversa."},
+    {"id": "t4", "classe": "geral", "texto": "Resíduos orgânicos, como cascas e restos de alimentos, podem ser compostados ou descartados na lixeira marrom."},
+    {"id": "t5", "classe": "plastic", "texto": "O número dentro do triângulo de reciclagem indica o tipo de plástico; PET (1) e PEAD (2) são os mais aceitos pelas cooperativas."},
+    {"id": "t6", "classe": "glass", "texto": "Vidros quebrados devem ser embalados em papelão ou jornal e sinalizados para proteger os coletores."},
+    {"id": "t7", "classe": "metal", "texto": "Latas de alumínio e aço são aceitas pela coleta seletiva; aerossóis vazios podem ser aceitos, mas nunca devem ser furados ou queimados."},
+    {"id": "t8", "classe": "paper", "texto": "Papel molhado ou engordurado perde as fibras úteis e não pode ser reciclado."},
+    {"id": "t9", "classe": "cardboard", "texto": "Caixas de papelão devem ser desmontadas e dobradas para ocupar menos espaço no transporte."},
+    {"id": "t10", "classe": "trash", "texto": "Fraldas, esponjas, itens de higiene e cerâmicas quebradas são rejeitos e vão para o lixo comum."}
+  ]
+}

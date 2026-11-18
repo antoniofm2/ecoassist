@@ -1,0 +1,117 @@
+\documentclass[conference]{IEEEtran}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{xcolor}
+% Marcador para valores que DEVEM ser preenchidos com resultados reais.
+\newcommand{\todo}[1]{\textbf{\textcolor{red}{[#1]}}}
+
+\begin{document}
+
+\title{EcoAssist: Assistente de Descarte de Res\'iduos Integrando Vis\~ao Computacional, Processamento de Linguagem Natural e Decis\~ao Baseada em Regras}
+
+\author{\IEEEauthorblockN{\todo{Nome 1}, \todo{Nome 2}, \todo{Nome 3}}
+\IEEEauthorblockA{Curso de \todo{curso}, AFYA | UNIMA Maceió, Brasil\\
+Disciplina de Inteligência Artificial -- Prof. Icaro Ferreira\\
+\todo{e-mails}}}
+
+\maketitle
+
+\begin{abstract}
+O descarte incorreto de res\'iduos reduz a efici\^encia da coleta seletiva e a d\'uvida do usu\'ario sobre \emph{como} descartar cada item \'e uma das causas. Este trabalho apresenta o EcoAssist, uma aplica\c{c}\~ao que recebe a foto de um res\'iduo e uma pergunta em portugu\^es e responde com a orienta\c{c}\~ao de descarte. O sistema integra, em um \'unico fluxo, um classificador visual baseado em MobileNetV2 ajustado por \emph{transfer learning} no conjunto TrashNet, um m\'odulo de PLN com reconhecimento de inten\c{c}\~ao (TF-IDF e Regress\~ao Log\'istica), extra\c{c}\~ao do material citado e busca sem\^antica em uma base de conhecimento, e um agente de decis\~ao baseado em regras que combina as evid\^encias e resolve incertezas e conflitos entre imagem e texto. O classificador visual foi comparado a uma linha de base HOG+SVM e o sistema foi avaliado de ponta a ponta. No conjunto de teste do TrashNet, a MobileNetV2 atingiu acur\'acia de 0{,}882 e F1 macro de 0{,}865, contra 0{,}611 e 0{,}582 da linha de base. Em 48 perguntas escritas livremente, o reconhecimento de inten\c{c}\~ao obteve acur\'acia de 0{,}65, muito abaixo do resultado sint\'etico, e o acerto de ponta a ponta foi de 0{,}54. Discutem-se erros e limita\c{c}\~oes, como o fundo limpo do conjunto de imagens e o uso de inten\c{c}\~oes sint\'eticas.
+\end{abstract}
+
+\begin{IEEEkeywords}
+vis\~ao computacional, processamento de linguagem natural, \emph{transfer learning}, res\'iduos, sistemas baseados em regras
+\end{IEEEkeywords}
+
+\section{Introdu\c{c}\~ao}
+A coleta seletiva depende da separa\c{c}\~ao correta dos res\'iduos pelo cidad\~ao. Erros comuns incluem misturar materiais e descartar embalagens contaminadas. Assistentes inteligentes podem reduzir essa barreira ao identificar o material a partir de uma foto e responder d\'uvidas em linguagem natural.
+
+O objetivo deste trabalho \'e projetar, implementar e avaliar um sistema que integre Aprendizado de M\'aquina, Vis\~ao Computacional e PLN em um mesmo fluxo funcional. As contribui\c{c}\~oes s\~ao: (i) uma arquitetura que combina imagem e texto por meio de um agente de decis\~ao; (ii) uma avalia\c{c}\~ao comparando o modelo de imagens com uma linha de base cl\'assica; e (iii) um reposit\'orio reproduz\'ivel dispon\'ivel em \todo{URL do GitHub}.
+
+\section{Fundamenta\c{c}\~ao e Trabalhos Relacionados}
+\textbf{Transfer learning.} Redes convolucionais pr\'e-treinadas em grandes bases podem ser adaptadas a tarefas com poucos dados. A MobileNetV2~\cite{sandler2018} usa blocos residuais invertidos e \'e leve o bastante para execu\c{c}\~ao em CPU.
+
+\textbf{Classifica\c{c}\~ao de res\'iduos.} O conjunto TrashNet~\cite{yang2016} cont\'em imagens de seis classes (papel\~ao, vidro, metal, papel, pl\'astico e rejeito). \todo{Adicionar 2--3 trabalhos relacionados verificados sobre classifica\c{c}\~ao de res\'iduos com redes convolucionais.}
+
+\textbf{PLN.} A representa\c{c}\~ao TF-IDF com um classificador linear \'e uma linha de base robusta para inten\c{c}\~oes. Para busca sem\^antica, modelos de senten\c{c}as como o Sentence-BERT~\cite{reimers2019} geram vetores comparados por similaridade do cosseno.
+
+\textbf{Decis\~ao.} Sistemas baseados em regras e agentes baseados em utilidade combinam evid\^encias incertas de forma explic\'avel~\cite{russell2021}.
+
+\section{Metodologia}
+\subsection{Arquitetura}
+A Fig.~\ref{fig:arq} mostra o fluxo: a imagem passa pelo classificador visual (top-3 com probabilidades); a pergunta passa pelo m\'odulo de PLN (inten\c{c}\~ao, material citado, palavras-chave e trechos recuperados); o agente de decis\~ao combina os resultados e gera a resposta.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.8\columnwidth]{../resultados/graficos/arquitetura.pdf}
+\caption{Arquitetura do EcoAssist.}
+\label{fig:arq}
+\end{figure}
+
+\subsection{Dados}
+\emph{Imagens:} TrashNet~\cite{yang2016}, 2527 imagens redimensionadas, divididas de forma estratificada em 70\%/15\%/15\% (treino/valida\c{c}\~ao/teste), semente 42 (1768 imagens de treino, 379 de valida\c{c}\~ao e 380 de teste). Aplicou-se aumento de dados (espelhamento, rota\c{c}\~ao de at\'e 15$^\circ$ e varia\c{c}\~ao de brilho) apenas no treino.
+
+\emph{Texto:} dataset de inten\c{c}\~oes com seis classes (como descartar, identificar material, recicl\'avel, cor da lixeira, cuidados, curiosidade), gerado por modelos de frases combinados com objetos e varia\c{c}\~oes, totalizando 360 exemplos, divididos em 80\%/20\%. Por ser sint\'etico, \'e complementado por 48 perguntas escritas livremente (8 por inten\c{c}\~ao), usadas apenas para avalia\c{c}\~ao.
+
+\emph{Base de conhecimento:} regras de descarte e trechos baseados na Resolu\c{c}\~ao CONAMA 275/2001 \todo{conferir e citar fontes}.
+
+\subsection{Modelos}
+O modelo principal \'e a MobileNetV2 com a cabe\c{c}a substitu\'ida por uma camada linear de seis sa\'idas; treinam-se primeiro apenas a cabe\c{c}a e depois os \'ultimos blocos, com Adam (taxa de aprendizado $10^{-3}$ na cabe\c{c}a e $10^{-4}$ nos \'ultimos quatro blocos, liberados a partir da quarta \'epoca), lotes de 32 e 6 \'epocas. A linha de base usa descritores HOG e SVM com n\'ucleo RBF. A inten\c{c}\~ao usa TF-IDF (uni e bigramas) e Regress\~ao Log\'istica. A busca sem\^antica usa o modelo \texttt{paraphrase-multilingual-MiniLM-L12-v2} com similaridade do cosseno.
+
+\subsection{Agente de decis\~ao}
+O agente aplica as regras: \textbf{R1} se a confian\c{c}a visual for menor que 0{,}60 e n\~ao houver material no texto, solicita nova foto; \textbf{R2} se a confian\c{c}a for baixa e o texto citar um material, usa o material do texto; \textbf{R3} se o texto contradiz uma imagem confiante, a imagem prevalece com aviso; \textbf{R4} caso contr\'ario, usa a predi\c{c}\~ao visual. A resposta combina a inten\c{c}\~ao, a lixeira correspondente e o trecho recuperado. O limiar 0{,}60 foi fixado a priori e n\~ao foi otimizado.
+
+\subsection{Ambiente e m\'etricas}
+Python, PyTorch, scikit-learn, sentence-transformers e Streamlit, executados em CPU. M\'etricas: acur\'acia, F1 macro e matriz de confus\~ao para imagens; precis\~ao, revoca\c{c}\~ao e F1 para inten\c{c}\~oes; e acerto de ponta a ponta em 48 pares (foto do conjunto de teste, pergunta livre), sendo 8 imagens por classe. Um par \'e correto quando a classe final da decis\~ao coincide com a classe real e a inten\c{c}\~ao prevista coincide com a esperada. Os experimentos usaram a busca sem\^antica no modo de contingência TF-IDF, pois o modelo de embeddings n\~ao estava instalado.
+
+\section{Resultados e Discuss\~ao}
+\subsection{Vis\~ao computacional}
+A Tabela~\ref{tab:img} compara os modelos no conjunto de teste.
+\begin{table}[t]
+\centering
+\caption{Desempenho no conjunto de teste de imagens.}
+\label{tab:img}
+\begin{tabular}{lcc}
+\toprule
+Modelo & Acur\'acia & F1 macro\\
+\midrule
+HOG + SVM & 0,611 & 0,582\\
+MobileNetV2 & 0,882 & 0,865\\
+\bottomrule
+\end{tabular}
+\end{table}
+A transfer\^encia de aprendizado elevou a acur\'acia em cerca de 27 pontos percentuais sobre a linha de base. A Fig.~\ref{fig:cm} mostra que os principais erros s\~ao papel\~ao classificado como papel (7 de 60 imagens), vidro confundido com metal (6 de 76) e pl\'astico confundido com vidro e metal. A classe \emph{rejeito}, com poucas imagens, teve o pior desempenho: 12 de 20 imagens corretas.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.85\columnwidth]{../resultados/graficos/matriz_confusao_mobilenetv2.pdf}
+\caption{Matriz de confus\~ao da MobileNetV2 no conjunto de teste.}
+\label{fig:cm}
+\end{figure}
+
+\subsection{PLN}
+No conjunto sint\'etico de teste, o classificador de inten\c{c}\~ao obteve F1 igual a 1{,}0, resultado otimista pois treino e teste compartilham os mesmos modelos de frase. Nas 48 perguntas livres, a acur\'acia foi 0{,}65 e o F1 macro 0{,}66, com as inten\c{c}\~oes \emph{identificar material} e \emph{recicl\'avel} sendo as mais confundidas (F1 de 0{,}55 e 0{,}50). A diferen\c{c}a indica que o treinamento com dados sint\'eticos generaliza mal para a linguagem natural. A busca sem\^antica n\~ao teve avalia\c{c}\~ao quantitativa pr\'opria.
+
+\subsection{Sistema integrado}
+Nos 48 pares (foto, pergunta), a classe visual estava correta em 87{,}5\% dos casos e a inten\c{c}\~ao em 62{,}5\%. A classe final decidida pelo agente coincidiu com a real em 81{,}3\% dos pares e o acerto conjunto (classe e inten\c{c}\~ao) foi 54{,}2\%. O limitante do sistema \'e, portanto, o m\'odulo de PLN. As regras acionadas foram: R4 (usar a imagem) em 35 pares, R3 (conflito, imagem prevalece) em 7, R1 (baixa confian\c{c}a, pedir nova foto) em 5 e R2 (texto resolve a incerteza) em 1. Em todos os 7 casos de R3 a men\c{c}\~ao no texto n\~ao era uma afirma\c{c}\~ao sobre o objeto: palavras gen\'ericas como ``lixo'' (mapeada para rejeito) e ``garrafa'' (mapeada para pl\'astico), ou perguntas que listam alternativas, como ``\'e pl\'astico ou vidro?''. Isso revela uma limita\c{c}\~ao do mapeamento por palavras-chave, e a imagem prevaleceu corretamente em 6 dos 7 casos. Como as imagens de teste v\^em do mesmo conjunto de dados, o resultado n\~ao mede o desempenho com fotos reais.
+
+\subsection{Limita\c{c}\~oes}
+O TrashNet possui fundo uniforme, o que tende a superestimar o desempenho em fotos reais; as inten\c{c}\~oes s\~ao em grande parte sint\'eticas; a base de conhecimento \'e pequena e as regras de coleta variam por munic\'ipio; o agente n\~ao trata m\'ultiplos objetos na mesma imagem.
+
+\section{Conclus\~ao e Trabalhos Futuros}
+Foi implementado um sistema que integra classifica\c{c}\~ao visual, PLN e decis\~ao por regras em um \'unico fluxo. A MobileNetV2 alcan\c{c}ou 88{,}2\% de acur\'acia no TrashNet, mas o reconhecimento de inten\c{c}\~ao, treinado com dados sint\'eticos, chegou a 65\% em perguntas livres, limitando o acerto de ponta a ponta a 54{,}2\%. Como trabalhos futuros: ampliar o conjunto de perguntas reais para treinar a inten\c{c}\~ao, coletar fotos reais, usar detec\c{c}\~ao de objetos (p.ex. YOLO) para m\'ultiplos itens, adicionar OCR de r\'otulos e localizar pontos de coleta com busca A*.
+
+\begin{thebibliography}{00}
+\bibitem{sandler2018} M. Sandler \emph{et al.}, ``MobileNetV2: Inverted residuals and linear bottlenecks,'' in \emph{Proc. IEEE CVPR}, 2018.
+\bibitem{yang2016} M. Yang and G. Thung, ``Classification of trash for recyclability status,'' Stanford CS229 Project Report, 2016.
+\bibitem{reimers2019} N. Reimers and I. Gurevych, ``Sentence-BERT: Sentence embeddings using Siamese BERT-networks,'' in \emph{Proc. EMNLP-IJCNLP}, 2019.
+\bibitem{russell2021} S. Russell and P. Norvig, \emph{Artificial Intelligence: A Modern Approach}, 4th ed. Pearson, 2021.
+\end{thebibliography}
+
+\end{document}
