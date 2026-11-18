@@ -1,13 +1,14 @@
-numpy
-pandas
-scikit-learn
-scikit-image
-joblib
-pillow
-matplotlib
-torch
-torchvision
-sentence-transformers
-spacy
-streamlit
-pytest
+# Versões usadas e testadas (Windows 11, Python 3.14, CPU)
+numpy==2.4.6
+pandas==3.1.1
+scikit-learn==1.9.1
+scikit-image==0.26.0
+joblib==1.6.0
+pillow==12.2.0
+matplotlib==3.10.9
+torch==2.15.0
+torchvision==0.29.2
+sentence-transformers==6.3.0
+streamlit==1.67.0
+pytest==9.2.0
+# opcional (lematização de palavras-chave): spacy + pt_core_news_sm
