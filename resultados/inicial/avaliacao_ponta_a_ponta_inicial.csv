@@ -1,0 +1,49 @@
+imagem,classe_real,visual,conf,pergunta,intencao_esperada,intencao_prevista,classe_final,regra,ok_visual,ok_intencao,ok_final,ok_classe_final
+cardboard/cardboard220.jpg,cardboard,cardboard,0.911,o que eu faço com esse treco depois de usar,como_descartar,como_descartar,cardboard,R4_visual,True,True,True,True
+cardboard/cardboard171.jpg,cardboard,glass,0.291,"vai no balde azul, verde ou amarelo?",cor_lixeira,reciclavel,,R1_baixa_confianca,False,False,False,False
+cardboard/cardboard291.jpg,cardboard,cardboard,0.993,devo tirar a tampa antes?,cuidados,cuidados,cardboard,R4_visual,True,True,True,True
+cardboard/cardboard269.jpg,cardboard,cardboard,0.999,fala alguma curiosidade sobre reciclagem disso,curiosidade,curiosidade,cardboard,R4_visual,True,True,True,True
+cardboard/cardboard245.jpg,cardboard,cardboard,0.978,que material é esse da foto?,identificar_material,identificar_material,cardboard,R4_visual,True,True,True,True
+cardboard/cardboard294.jpg,cardboard,cardboard,0.613,isso vira material reciclado?,reciclavel,reciclavel,cardboard,R4_visual,True,True,True,True
+cardboard/cardboard214.jpg,cardboard,cardboard,0.864,qual o destino certo pra esse lixo?,como_descartar,como_descartar,cardboard,R3_conflito_imagem_prevalece,True,True,True,True
+cardboard/cardboard223.jpg,cardboard,cardboard,0.967,qual a lixeira certa pra isso?,cor_lixeira,cor_lixeira,cardboard,R4_visual,True,True,True,True
+glass/glass322.jpg,glass,metal,0.695,posso jogar sujo ou preciso limpar,cuidados,reciclavel,metal,R4_visual,False,False,False,False
+glass/glass473.jpg,glass,glass,0.809,fala alguma curiosidade sobre reciclagem disso,curiosidade,curiosidade,glass,R4_visual,True,True,True,True
+glass/glass25.jpg,glass,glass,0.906,você consegue me dizer o que é esse objeto,identificar_material,identificar_material,glass,R4_visual,True,True,True,True
+glass/glass235.jpg,glass,glass,0.938,tem como reciclar isso aí?,reciclavel,como_descartar,glass,R4_visual,True,False,False,True
+glass/glass27.jpg,glass,glass,0.752,me ensina a descartar direito,como_descartar,como_descartar,glass,R4_visual,True,True,True,True
+glass/glass131.jpg,glass,glass,0.677,que cor é o recipiente pra esse resíduo?,cor_lixeira,identificar_material,glass,R4_visual,True,False,False,True
+glass/glass109.jpg,glass,glass,0.754,isso machuca quem coleta?,cuidados,reciclavel,glass,R4_visual,True,False,False,True
+glass/glass480.jpg,glass,glass,0.748,qual o benefício pro meio ambiente?,curiosidade,cor_lixeira,glass,R4_visual,True,False,False,True
+metal/metal358.jpg,metal,metal,0.553,seria papel ou papelão?,identificar_material,reciclavel,cardboard,R2_texto_resolve_incerteza,True,False,False,False
+metal/metal126.jpg,metal,metal,0.748,isso é reciclável mesmo?,reciclavel,reciclavel,metal,R4_visual,True,True,True,True
+metal/metal224.jpg,metal,metal,0.89,"to com uma garrafa aqui, vai pra onde?",como_descartar,como_descartar,metal,R3_conflito_imagem_prevalece,True,True,True,True
+metal/metal93.jpg,metal,metal,0.857,lixeira de qual cor recebe isso,cor_lixeira,cor_lixeira,metal,R4_visual,True,True,True,True
+metal/metal352.jpg,metal,metal,0.933,precisa amassar ou desmontar primeiro?,cuidados,cuidados,metal,R4_visual,True,True,True,True
+metal/metal243.jpg,metal,metal,0.802,qual a importância ambiental disso,curiosidade,curiosidade,metal,R4_visual,True,True,True,True
+metal/metal373.jpg,metal,metal,0.763,isso é plástico ou vidro?,identificar_material,reciclavel,metal,R3_conflito_imagem_prevalece,True,False,False,True
+metal/metal402.jpg,metal,metal,0.518,isso é reciclável mesmo?,reciclavel,reciclavel,,R1_baixa_confianca,True,True,False,False
+paper/paper190.jpg,paper,paper,0.928,qual o destino certo pra esse lixo?,como_descartar,como_descartar,paper,R3_conflito_imagem_prevalece,True,True,True,True
+paper/paper535.jpg,paper,paper,0.94,que cor é o recipiente pra esse resíduo?,cor_lixeira,identificar_material,paper,R4_visual,True,False,False,True
+paper/paper20.jpg,paper,paper,0.947,precisa amassar ou desmontar primeiro?,cuidados,cuidados,paper,R4_visual,True,True,True,True
+paper/paper359.jpg,paper,paper,0.977,qual o benefício pro meio ambiente?,curiosidade,cor_lixeira,paper,R4_visual,True,False,False,True
+paper/paper153.jpg,paper,paper,0.996,isso é plástico ou vidro?,identificar_material,reciclavel,paper,R3_conflito_imagem_prevalece,True,False,False,True
+paper/paper584.jpg,paper,paper,0.92,tem como reciclar isso aí?,reciclavel,como_descartar,paper,R4_visual,True,False,False,True
+paper/paper358.jpg,paper,paper,0.975,jogo fora como isso aqui?,como_descartar,como_descartar,paper,R4_visual,True,True,True,True
+paper/paper235.jpg,paper,paper,0.803,lixeira de qual cor recebe isso,cor_lixeira,cor_lixeira,paper,R4_visual,True,True,True,True
+plastic/plastic436.jpg,plastic,plastic,0.67,tem algum perigo em descartar isso?,cuidados,cuidados,plastic,R4_visual,True,True,True,True
+plastic/plastic295.jpg,plastic,plastic,0.986,o que isso vira depois de reciclado?,curiosidade,identificar_material,plastic,R4_visual,True,False,False,True
+plastic/plastic319.jpg,plastic,plastic,0.895,qual tipo de material aparece aí,identificar_material,identificar_material,plastic,R4_visual,True,True,True,True
+plastic/plastic214.jpg,plastic,plastic,0.935,tem como reciclar isso aí?,reciclavel,como_descartar,plastic,R4_visual,True,False,False,True
+plastic/plastic38.jpg,plastic,plastic,0.971,jogo fora como isso aqui?,como_descartar,como_descartar,plastic,R4_visual,True,True,True,True
+plastic/plastic324.jpg,plastic,plastic,0.859,qual a lixeira certa pra isso?,cor_lixeira,cor_lixeira,plastic,R4_visual,True,True,True,True
+plastic/plastic9.jpg,plastic,glass,0.286,que cuidado devo ter com esse material?,cuidados,cuidados,,R1_baixa_confianca,False,True,False,False
+plastic/plastic272.jpg,plastic,plastic,0.879,fala alguma curiosidade sobre reciclagem disso,curiosidade,curiosidade,plastic,R4_visual,True,True,True,True
+trash/trash25.jpg,trash,trash,0.824,seria papel ou papelão?,identificar_material,reciclavel,trash,R3_conflito_imagem_prevalece,True,False,False,True
+trash/trash130.jpg,trash,trash,0.342,posso botar na coleta seletiva?,reciclavel,reciclavel,,R1_baixa_confianca,True,True,False,False
+trash/trash108.jpg,trash,paper,0.325,onde levo isso pra ser descartado,como_descartar,como_descartar,,R1_baixa_confianca,False,True,False,False
+trash/trash89.jpg,trash,paper,0.853,me diz a cor do lixo seletivo pra esse item,cor_lixeira,identificar_material,paper,R3_conflito_imagem_prevalece,False,False,False,False
+trash/trash101.jpg,trash,trash,0.95,é perigoso mexer nisso?,cuidados,reciclavel,trash,R4_visual,True,False,False,True
+trash/trash85.jpg,trash,paper,0.625,o que isso vira depois de reciclado?,curiosidade,identificar_material,paper,R4_visual,False,False,False,False
+trash/trash8.jpg,trash,trash,0.787,reconhece o material dessa imagem?,identificar_material,identificar_material,trash,R4_visual,True,True,True,True
+trash/trash31.jpg,trash,trash,0.639,será que dá pra reaproveitar na reciclagem,reciclavel,reciclavel,trash,R4_visual,True,True,True,True

@@ -16,11 +16,14 @@ MODELO = RAIZ / "resultados" / "modelo_intencao.joblib"
 
 def treinar(avaliar: bool = True):
     df = pd.read_csv(CSV)
+    extra = RAIZ / "dados" / "intencoes_extra.csv"  # frases escritas à mão
+    if extra.exists():
+        df = pd.concat([df, pd.read_csv(extra)], ignore_index=True)
     X_tr, X_te, y_tr, y_te = train_test_split(
         df.texto, df.intencao, test_size=0.2, stratify=df.intencao, random_state=42)
     pipe = make_pipeline(
         TfidfVectorizer(ngram_range=(1, 2), lowercase=True, sublinear_tf=True),
-        LogisticRegression(max_iter=1000))
+        LogisticRegression(C=10, max_iter=2000))
     pipe.fit(X_tr, y_tr)
     relatorio = classification_report(y_te, pipe.predict(X_te), output_dict=True)
     if avaliar:

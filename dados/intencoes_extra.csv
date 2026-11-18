@@ -1,0 +1,70 @@
+texto,intencao
+"o que faço depois de usar essa embalagem",como_descartar
+"em qual lugar eu deixo esse resto",como_descartar
+"qual é o descarte adequado desse objeto",como_descartar
+"tenho que jogar fora esse material, como fazer",como_descartar
+"manda a forma correta de jogar fora",como_descartar
+"pra onde vai esse resíduo depois que eu uso",como_descartar
+"preciso de ajuda pra descartar isso certo",como_descartar
+"como separo esse item na hora de jogar fora",como_descartar
+"qual o procedimento para descartar essa peça",como_descartar
+"o que fazer com essa sobra de material",como_descartar
+"onde deixo isso para a coleta passar",como_descartar
+"como eu me desfaço disso sem poluir",como_descartar
+"que material é esse que estou segurando",identificar_material
+"consegue ver o que é esse objeto na imagem",identificar_material
+"é de papel, plástico, metal ou vidro?",identificar_material
+"qual a composição desse item",identificar_material
+"esse negócio é feito de quê",identificar_material
+"me fala a classe do material da foto",identificar_material
+"a foto mostra qual tipo de resíduo",identificar_material
+"reconheça o material que está aí",identificar_material
+"descubra de que é feito isso da imagem",identificar_material
+"isso parece ser o quê, vidro ou lata",identificar_material
+"qual a natureza desse material",identificar_material
+"classifica esse resíduo pra mim",identificar_material
+"o pessoal da reciclagem aproveita isso",reciclavel
+"esse material volta pro ciclo da reciclagem",reciclavel
+"dá pra reaproveitar isso na coleta seletiva",reciclavel
+"é aceito pela reciclagem",reciclavel
+"tem reciclagem pra esse tipo de material",reciclavel
+"posso mandar isso pra reciclar",reciclavel
+"isso entra na reciclagem ou vai pro lixo comum",reciclavel
+"esse item é de reciclagem",reciclavel
+"a usina de reciclagem recebe isso",reciclavel
+"é possível reciclar esse resíduo",reciclavel
+"isso se recicla",reciclavel
+"o que devo colocar na lixeira de qual cor",cor_lixeira
+"qual a cor do container para esse material",cor_lixeira
+"em qual cor de lixeira da coleta seletiva isso entra",cor_lixeira
+"que cor de balde recebe esse resíduo",cor_lixeira
+"qual lixeira colorida é a certa",cor_lixeira
+"me diz qual a cor do recipiente de coleta pra isso",cor_lixeira
+"vermelha, azul, verde ou amarela, qual é",cor_lixeira
+"que cor identifica a lixeira desse material",cor_lixeira
+"e a cor do coletor, qual é",cor_lixeira
+"qual a cor padrão da lixeira pra esse resíduo",cor_lixeira
+"tenho de enxaguar isso antes de descartar",cuidados
+"precisa estar seco ou pode estar molhado",cuidados
+"é seguro manusear esse material",cuidados
+"preciso tirar rótulo ou tampa antes",cuidados
+"posso descartar com resto de comida",cuidados
+"há risco de me cortar com isso",cuidados
+"é preciso esvaziar antes de jogar",cuidados
+"devo limpar a embalagem primeiro",cuidados
+"que precauções devo tomar ao descartar",cuidados
+"posso jogar sujo ou preciso higienizar antes",cuidados
+"isso exige algum cuidado especial",cuidados
+"é perigoso para quem recolhe o lixo",cuidados
+"por que é bom reciclar esse material",curiosidade
+"qual a vantagem ambiental dessa reciclagem",curiosidade
+"me fala algo interessante sobre isso",curiosidade
+"quanto esse material demora para se decompor",curiosidade
+"que produto novo sai da reciclagem disso",curiosidade
+"qual o ganho para o planeta em reciclar isso",curiosidade
+"conta um fato curioso sobre esse resíduo",curiosidade
+"que impacto isso causa na natureza",curiosidade
+"o que se ganha reciclando esse material",curiosidade
+"quanta energia se poupa reciclando isso",curiosidade
+"existe algum dado legal sobre reciclar isso",curiosidade
+"quais os benefícios de reciclar esse item",curiosidade

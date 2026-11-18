@@ -38,6 +38,10 @@ O treino roda em CPU, porém é bem mais rápido no Google Colab.
 
 ## Resultados
 Preencher **somente com valores gerados em `resultados/`** (`metricas_imagens.json`, gráficos, exemplos).
+**Protocolo de avaliação.** Os números abaixo são a *avaliação inicial* (versão do commit inicial): intenção 0,65 em 48 perguntas livres e **54,2% de acerto ponta a ponta**. Se essas 48 perguntas forem usadas para ajustar o PLN, elas passam a ser conjunto de desenvolvimento e esses valores continuam registrados como resultado inicial. A versão final será medida com pares novos escritos pelo grupo, com fotos de celular e respostas esperadas definidas **antes** de usar o app.
+
+**Após ajustes no PLN (conjunto de desenvolvimento, NÃO é a avaliação final):** mais 72 frases escritas à mão (`dados/intencoes_extra.csv`), regularização C=10, regra R5 (intenção incerta → resposta-resumo), busca restrita à classe prevista e embeddings multilíngues ativos. Nas mesmas 48 perguntas: intenção 0,65 → 0,90; ponta a ponta 54,2% → 66,7%. Esses valores foram obtidos olhando para essas 48 perguntas e para os erros delas (incluindo a escolha de C), portanto são otimistas. Os resultados iniciais estão preservados em `resultados/inicial/`. A medição final virá dos pares novos do grupo.
+
 **Imagens (medido, TrashNet, 2527 imagens, teste = 380, CPU, 6 épocas):** MobileNetV2 acurácia 0,882 / F1 macro 0,865; baseline HOG+SVM acurácia 0,611 / F1 macro 0,582. A classe `trash` é a mais difícil (poucas imagens). Detalhes em `resultados/metricas_imagens.json` e `resultados/graficos/`.
 
 **Intenção (medido):** F1 = 1,0 no teste sintético, mas acurácia 0,65 e F1 macro 0,66 em 48 perguntas livres (`dados/perguntas_livres.csv`, `python -m src.pln.avaliar_intencao_livre`). Esse conjunto é um rascunho gerado por IA: a equipe deve revisar e ampliar antes de citar no artigo.

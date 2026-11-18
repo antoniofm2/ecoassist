@@ -54,10 +54,16 @@ def decidir(top_visual, intencao, p_intencao, material_texto=None, trechos=None)
     info = BASE[classe]
     nome = info["nome"]
     if p_intencao < LIMIAR_INTENCAO:
-        intencao = "como_descartar"
-        avisos.append("Não entendi bem a pergunta; mostrei como descartar.")
+        # R5: intenção incerta -> resposta geral em vez de assumir uma intenção
+        intencao = "resumo"
+        regra = regra + "+R5_intencao_incerta"
+        avisos.append("Não tenho certeza do que você quer saber; dei um resumo.")
 
-    if intencao == "identificar_material":
+    if intencao == "resumo":
+        rec = "reciclável" if info["reciclavel"] else "não reciclável"
+        corpo = (f"Material: {nome} ({rec}). Lixeira {info['lixeira']}. "
+                 f"{info['descarte']}")
+    elif intencao == "identificar_material":
         corpo = f"Parece ser {nome}."
     elif intencao == "reciclavel":
         corpo = (f"Sim, {nome} é reciclável." if info["reciclavel"]

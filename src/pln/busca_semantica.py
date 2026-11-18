@@ -42,10 +42,12 @@ class Buscador:
             q = self.vet.transform([consulta])
             sims = (self.mat @ q.T).toarray().ravel()
         sims = np.asarray(sims, dtype=float)
-        # reforço leve para trechos da classe visual prevista
+        # só trechos gerais ou da classe visual prevista são candidatos
         if classe:
             for i, t in enumerate(self.trechos):
-                if t["classe"] == classe:
+                if t["classe"] not in ("geral", classe):
+                    sims[i] = -1.0
+                elif t["classe"] == classe:
                     sims[i] += 0.1
         idx = np.argsort(-sims)[:k]
         return [(self.trechos[i]["texto"], float(sims[i])) for i in idx]

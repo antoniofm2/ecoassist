@@ -1,0 +1,14 @@
+{
+  "n_pares": 48,
+  "busca_semantica_modo": "tfidf",
+  "acuracia_visual": 0.875,
+  "acuracia_intencao": 0.625,
+  "acuracia_final": 0.5416666666666666,
+  "acuracia_classe_final": 0.8125,
+  "regras": {
+    "R4_visual": 35,
+    "R1_baixa_confianca": 5,
+    "R3_conflito_imagem_prevalece": 7,
+    "R2_texto_resolve_incerteza": 1
+  }
+}

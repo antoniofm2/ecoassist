@@ -39,6 +39,12 @@ def test_conflito_imagem_prevalece():
     assert r["decisao"].classe == "plastic" and r["decisao"].avisos
 
 
+def test_intencao_incerta_gera_resumo():
+    from src.decisao.agente import decidir
+    d = decidir([("glass", .9)], "cuidados", 0.2)
+    assert "R5_intencao_incerta" in d.regra and "reciclável" in d.resposta
+
+
 def test_cor_lixeira():
     r = EcoAssist().responder(None, "Qual a cor da lixeira?", top_visual=[("paper", .9)])
     assert "azul" in r["decisao"].resposta

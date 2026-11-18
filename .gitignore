@@ -11,3 +11,5 @@ artigo/*.log
 artigo/*.out
 .env
 *.log
+dados/avaliacao_final/fotos/*
+!dados/avaliacao_final/fotos/.gitkeep
