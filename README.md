@@ -44,7 +44,7 @@ Abra http://localhost:8501, envie uma foto e escreva uma pergunta.
 **Modelos treinados:**
 - **Visão:** `resultados/mobilenetv2_trashnet.pt` já está no repositório (9 MB). Não é preciso baixar o TrashNet nem treinar para rodar o app.
 - **Intenção:** é treinada automaticamente na primeira execução, a partir de `dados/intencoes.csv` e `dados/intencoes_extra.csv` (poucos segundos, resultado determinístico).
-- **Busca semântica:** o modelo `paraphrase-multilingual-MiniLM-L12-v2` é baixado do Hugging Face na primeira execução, por isso a primeira resposta demora mais. Sem internet, o app usa a contingência TF-IDF automaticamente.
+- **Busca semântica:** o modelo `paraphrase-multilingual-MiniLM-L12-v2` é baixado do Hugging Face na primeira execução (cerca de 460 MB), por isso a primeira abertura demora alguns minutos. No Windows pode aparecer um aviso sobre *symlinks* do cache do Hugging Face, que não afeta o funcionamento. Sem internet, o app usa a contingência TF-IDF automaticamente.
 
 **Testes:**
 ```bash
@@ -87,7 +87,7 @@ Principais confusões: papelão → papel e vidro → metal. A classe `trash` (r
 
 - O teste sintético de intenção chega a 0,94, mas compartilha os modelos de frase com o treino.
 - Os resultados iniciais ficam preservados em `resultados/inicial/`.
-- Os ajustes da versão atual foram: mais 72 frases escritas à mão, regularização C=10, regra R5, busca restrita à classe prevista e embeddings multilíngues.
+- Os ajustes da versão atual foram: mais 69 frases escritas à mão, regularização C=10, regra R5, busca restrita à classe prevista e embeddings multilíngues.
 
 **Avaliação final:** os pares novos do grupo, com fotos de celular e respostas esperadas definidas antes de usar o app, ficam em `dados/avaliacao_final/`. O passo a passo está em [`dados/avaliacao_final/LEIAME.md`](dados/avaliacao_final/LEIAME.md). Essa avaliação ainda não foi realizada.
 
