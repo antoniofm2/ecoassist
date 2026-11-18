@@ -4,9 +4,9 @@ Projeto final da disciplina de Inteligência Artificial — AFYA | UNIMA Maceió
 
 | | |
 |---|---|
-|| **Integrantes e responsabilidades** | Antonio de Freitas Melo — integração dos módulos e desenvolvimento da interface Streamlit<br>Kauê Anderson Arry Pereira de Andrade — visão computacional, treinamento e avaliação do modelo de classificação de imagens<br>Bruno Duarte Bastos — processamento de linguagem natural, classificação de intenções e busca semântica<br>Luis Arthir Alves Cordeiro — regras de decisão e organização da base de conhecimento sobre descarte<br>Servio Tullio Marinho Machado — testes do sistema, análise dos resultados e documentação do projeto |
-| **Artigo (Overleaf, visualização)** | [Ver artigo no Overleaf](COLE_O_LINK_AQUI) |
-| **Artigo (PDF)** | [Baixar PDF](artigo/main.pdf) |
+| **Integrantes e responsabilidades** | Antonio de Freitas Melo — integração dos módulos e desenvolvimento da interface Streamlit<br>Kauê Anderson Arry Pereira de Andrade — visão computacional, treinamento e avaliação do modelo de classificação de imagens<br>Bruno Duarte Bastos — processamento de linguagem natural, classificação de intenções e busca semântica<br>Luis Arthir Alves Cordeiro — regras de decisão e organização da base de conhecimento sobre descarte<br>Servio Tullio Marinho Machado — testes do sistema, análise dos resultados e documentação do projeto |
+| **Artigo (Overleaf, visualização)** | [Ver artigo no Overleaf](https://www.overleaf.com/project/6afdf3598f6c9086531788c5/share#77ae5ace5b6f22a58e21c2c4e2882606ae2fc8eb57fd2810) |
+| **Artigo (PDF)** | [Baixar PDF](artigo/Main.pdf) |
 
 ## Problema
 Dúvidas sobre *como* descartar cada resíduo reduzem a eficiência da coleta seletiva. No EcoAssist, o usuário envia a **foto** de um resíduo e escreve uma **pergunta em português** ("Posso reciclar isso?", "Qual a cor da lixeira?"). O sistema reconhece o material, interpreta a pergunta e responde com a orientação de descarte e a fonte usada.
