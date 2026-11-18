@@ -32,7 +32,7 @@ Dúvidas sobre *como* descartar cada resíduo reduzem a eficiência da coleta se
 Testado no Windows 11 com Python 3.14 (CPU, sem GPU). Os passos abaixo foram verificados em uma cópia limpa do repositório e um ambiente virtual novo.
 
 ```bash
-git clone <URL-DO-REPOSITORIO> ecoassist
+git clone https://github.com/antoniofm2/ecoassist.git ecoassist
 cd ecoassist
 python -m venv .venv
 .venv\Scripts\activate          # Linux/macOS: source .venv/bin/activate
